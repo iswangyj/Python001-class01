@@ -29,5 +29,5 @@ for tag in bs_info.find_all('div', attrs={'class': 'movie-item-hover'}, limit=10
     movies.append((movie_title, movie_tag, plan_date))
 
 maoyan = pd.DataFrame(data=movies)
-maoyan.to_csv('./week01/result/maoyan1.csv', encoding='utf8',
+maoyan.to_csv('./result/maoyan1.csv', encoding='utf8',
               index=False, header=False)
