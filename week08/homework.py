@@ -4,6 +4,16 @@ import time
 from typing import Callable, Iterable
 
 
+"""
+作业一
+扁平序列: 只能容纳一种类型
+可变性(mutable): 可以在其 `id()` 值保持固定的情况下改变其取值, 即可以在原位置修改对象的值.
+不可变性(immutable): 在其 `id()` 值保持固定的情况下不可改变其值, 即不能在原位置修改对象的值.
+可变序列: 具有可变性(mutable)的对象
+不可变序列: 具有不可变性(immutable)的对象
+"""
+
+
 def my_map(func: Callable, iterables: Iterable):
     """ 自定义一个 python 函数, 模拟 map 函数的功能 """
     if hasattr(iterables, '__iter__'):
