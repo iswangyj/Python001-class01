@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+	  <ul>
+		  <li>
+			  <a href="{% url 'product_list' %}">Products</a>
+		  </li>
+		  <li>
+			  <a href="{% url 'comment_list' %}">Comments</a>
+		  </li>
+	  </ul>
+{% endblock content %}
+
